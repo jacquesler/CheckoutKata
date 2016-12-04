@@ -1,4 +1,4 @@
-import checkout.Basket;
+import basket.Basket;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

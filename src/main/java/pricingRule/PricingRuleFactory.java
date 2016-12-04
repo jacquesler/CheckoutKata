@@ -2,8 +2,7 @@ package pricingRule;
 
 import stock.StockItem;
 
-public enum PricingRuleFactory
-{
+public enum PricingRuleFactory{
     Instance;
 
     /**

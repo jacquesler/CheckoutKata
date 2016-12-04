@@ -1,4 +1,4 @@
-package checkout;
+package basket;
 
 import pricingRule.PricingRule;
 import pricingRule.StockPricingRules;

@@ -1,6 +1,6 @@
 package main;
 
-import checkout.Basket;
+import basket.Basket;
 import pricingRule.StockPricingRules;
 import stock.Catalogue;
 import stock.StockItem;
