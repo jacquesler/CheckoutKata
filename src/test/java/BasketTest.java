@@ -16,13 +16,19 @@ public class BasketTest {
     public void setup() {
         PricingRuleFactory factory = PricingRuleFactory.Instance;
 
+        // Setup pricing rule for stock item A. First create the underlying price for the item,
+        // then use the decorator pattern to wrap the underlying price with a special pricing rule
         PricingRule aPrice =  factory.createUnderlyingPrice(Catalogue.A, 50);
         PricingRule aPriceWithSpecial = factory.createDiscountSpecial(aPrice, 3, 20);
 
+        // Setup pricing rule for stock item B with special
         PricingRule bPrice = factory.createUnderlyingPrice(Catalogue.B, 30);
         PricingRule bPriceWithSpecial = factory.createDiscountSpecial(bPrice, 2, 15);
 
+        // Setup pricing rule for stock item C
         PricingRule cRetailPrice = factory.createUnderlyingPrice(Catalogue.C, 20);
+
+        // Setup pricing rule for stock item D
         PricingRule dRetailPrice = factory.createUnderlyingPrice(Catalogue.D, 15);
 
         pricingRules = new StockPricingRules();
